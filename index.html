@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* .hamburger-icon{  
+            display: none;
+            border: none;
+            background-color: transparent;
+        }
+
+.hamburger-icon input[type="checkbox"]{
+    appearance: none;
+}
+
+
+@media screen and(max-width: 600px) {
+.navigation{
+    height: 0%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.precious{
+    display: flex;
+    justify-content: space-between;
+}
+}
+    
+.hamburger-icon{
+    display: none;
+}
+
+.fa-x{
+    display: none;
+}
+
+header:has(.hamburger-icon input[type="checkbox"]:checked)  .fa-bars {
+    display: none;
+}
+
+header:has(.hamburger-icon input[type="checkbox"]:checked)  .navigation {
+    display: none;
+} 
+ */
+*{
+    margin: 0%;
+padding: 0%;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+.body{
+    background-color: lightgray;
+    
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: darkslateblue;
+}
+
+
+.pre{
+    color: white;
+    
+}
+
+.hamburger-icon{
+    border: none;
+    background-color: transparent;
+}
+
+.hamburger-icon .fa-bars,
+.hamburger-icon .fa-x{
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hamburger-icon input[type="checkbox"]{
+    appearance: none;
+}
+
+.lists{
+    display: flex;
+    gap: 1rem;
+    
+    
+}
+
+.lists a{
+color: rgb(236, 234, 234);
+padding-left: 34px;
+position: relative;
+left: 990px;
+top: 18px;
+}
+
+@media screen and(max-width:600px){
+    header{
+        display: block;
+    }
+    .lists {
+        height: 0%;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        
+    }
+    .PRECIOUS{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    .fa-x{
+        display: none;
+    }
+    header:has(.hamburger-icon
+    input[type="checkbox"]:checked) .lists {
+        margin-top: 1rem;
+        height: 100px;
+    }
+    header:has(.hamburger-icon
+    input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+    header:has(.hamburger-icon
+    input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    place-items:center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.container:nth-child(1){
+    margin-top: 0px;
+    
+}
+.container p{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(48, 45, 45);
+    text-shadow: 2px 2px black;
+    transition: all 0.5s linear;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.container-1  p{
+    position: relative;
+    top: 290px;
+    left: 33px;
+}
+
+.container-2 p{
+    position: relative;
+text-decoration: underline;
+left: 23px;
+}
+
+
+.container-2  h3{
+position: relative;
+left: 17px;
+bottom:30px;
+text-decoration: none;
+}
+
+
+.container-2 ul{
+    position: relative;
+    bottom: 120px;
+    left: 23px;
+}
+
+
+.container-2  h5{
+position: relative;
+font-size:15px ;  
+text-decoration: underline;
+left: 17px;
+bottom:50px;
+}
+
+.W3{
+    position: absolute;
+    width: 99px;
+    height: 17px;
+    bottom:-420px;
+}
+
+.container-3  p{
+    position: relative;
+    text-decoration: underline;
+}
+
+.container-3 h6{
+    position: relative;
+    font-size: 23px;
+    bottom: 93px;
+}
+
+.button{
+    position: absolute;
+    width: 99px;
+    height: 17px;
+    bottom:-420px;
+}
+
+
+
+
+.container-4 p{
+    position: relative;
+    top: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-5 p{
+    position: relative;
+    top: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container-2 h4{
+    position: relative;
+    bottom:189px;
+}
+
+
+
+
+
+
+
+
+
+
+.container button{
+    color: rgb(245, 241, 241);
+}
+
+.container-1{
+    background-image:url(/style/bluetooth/25de91a5bf8080efbfe8411fc59c15c9.jpg);
+    
+}
+.container-2{
+    background-image:url(/style/bluetooth/453711bec1915885d53183b5f9cc6dbc.jpg);
+}
+.container-3{
+    background-image: url(/style/bluetooth/da5edb618c6ad118f5c4179358e6d2ac.jpg);
+}
+.container-4{
+    background-image:url(/style/bluetooth/f4ece518a46c56f892c55d2867ba1334.jpg);
+}
+.container-5{
+    background-image:url(/style/bluetooth/a5cf3b04b40c1bf9698a9a020eb4f8ca.jpg);
+}
+
+.container-1 h2{
+    position: relative;
+    color: rgb(75, 75, 72);
+    top: 0px;
+    font-style: italic;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    
+
+}
+
+.container-1 h3{
+    position: absolute;
+    color: rgb(138, 135, 135);
+    top: 90px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 30px;
+    left: 23px;
+}
+
+footer p{
+    position: relative;
+    text-transform: uppercase;
+    background-color: blueviolet;
+}
+    </style>
+</head>
+<body>
+<header>
+<div class="PRECIOUS">
+<h1 class="pre">PRECIOUS</h1>
+<button class="hamburger-icon">
+    <label for="dropdown">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa solid fa-x"></i>
+    </label>
+    <input type="checkbox" id="dopdownr" />
+</button>
+</div>
+</header>
+<ul class="lists">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+<main>
+    <div class="container container-1">
+    
+        <h3>learn html,css and javascript</h3>
+        <p>coding is for you,do not run away.</p>
+    </div>
+    <div class="container container-2">
+        <p><u>html</u></p>
+            <h5>HTML FUNDAMENTAL</h5>             
+             <ul>
+                <li>HTML Tags</li>
+                <li>HTML Element</li>
+                <li>HTML Attributes</li>
+                <li>HTML Comments</li>
+                <li>HTML Styles</li>
+                <li>HTML Colors</li>
+                <li>HTML Responsive</li>
+                <li>HTML Centered</li>
+            </ul>
+            <h4>click on the link below for more information</h4>
+          <button class="W3"><a href="https://www.w3schools.com">W3SCHOOLS</a></button>  
+    </div>
+          
+    <div class="container container-3">
+        <p>CSS</p>
+        <h6>CSS denotes cascading style sheet.<br>
+            It is used to design a web page by using the key word "style"e.g  <ol>
+                <li>colors</li>
+                <li>padding</li>
+                <li>text-transform</li>
+                <li>font-size</li>
+                <li>background-colors and so on</li></h6>
+               
+          </div>
+            </ol>
+    </div>
+    <div class="container container-4">
+        <p>javascript</p>
+        
+    </div>
+    <div class="container container-5">
+        <p>SEE YOU ALL IN THE NEXT SECTION</p>
+    </div>
+</main>
+
+</body>
+</html>
